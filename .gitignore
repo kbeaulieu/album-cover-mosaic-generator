@@ -1,0 +1,25 @@
+# IDE and editors
+/.idea
+.project
+.classpath
+*.launch
+.settings/
+*.ipr
+*.iml
+
+# System Files
+.DS_Store
+Thumbs.db
+*.bak
+*.swp
+
+# Misc
+*.log
+*.hprof
+
+# Node
+node_modules
+dist
+.cache
+
+scripts/start.secrets.sh

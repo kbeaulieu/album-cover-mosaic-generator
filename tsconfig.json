@@ -1,0 +1,17 @@
+{
+  "extends": "./node_modules/@equisoft/tslint-config/tsconfig.standards.json",
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "noEmitOnError": true,
+    "module": "commonjs",
+    "declaration": true,
+    "importHelpers": true,
+    "outDir": "./dist"
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules/**/*"
+  ]
+}
