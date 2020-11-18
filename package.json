@@ -6,21 +6,33 @@
   "private": true,
   "scripts": {
     "build": "tsc",
-    "start": "./scripts/start.secrets.sh",
-    "build-start": "yarn build && yarn start"
+    "test": "ava"
   },
   "dependencies": {
-    "axios": "~0.18.0",
-    "commander": "~2.20.0",
+    "ava": "~3.11.1",
+    "axios": "~0.19.2",
+    "commander": "~6.0.0",
     "disconnect": "~1.2.1",
-    "sharp": "~0.22.0"
+    "ramda": "~0.27.1",
+    "sharp": "~0.25.4",
+    "toml": "~3.0.0"
   },
   "devDependencies": {
-    "@equisoft/tslint-config": "~0.0.8",
-    "@types/node": "~11.13.4",
-    "@types/sharp": "^0.22.1",
-    "ts-node": "~8.0.3",
-    "tslint": "~5.15.0",
-    "typescript": "~3.4.3"
+    "@types/node": "~12.12.53",
+    "@types/ramda": "~0.27.14",
+    "@types/sharp": "~0.25.1",
+    "@types/sinon": "~9.0.4",
+    "sinon": "~9.0.3",
+    "ts-node": "~8.10.2",
+    "tsconfig-paths": "~3.9.0",
+    "typescript": "~3.9.7"
+  },
+  "ava": {
+    "failWithoutAssertions": false,
+    "extensions": ["ts"],
+    "require": [
+      "ts-node/register",
+      "tsconfig-paths/register"
+    ]
   }
 }

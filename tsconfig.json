@@ -1,17 +1,22 @@
 {
-  "extends": "./node_modules/@equisoft/tslint-config/tsconfig.standards.json",
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "noEmitOnError": true,
     "module": "commonjs",
-    "declaration": true,
     "importHelpers": true,
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "target": "es5",
+    "lib": [
+      "ESNext"
+    ],
+    "baseUrl": "./src",
+
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true
   },
   "include": [
     "src/**/*"
-  ],
-  "exclude": [
-    "node_modules/**/*"
   ]
 }

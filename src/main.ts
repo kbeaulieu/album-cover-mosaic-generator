@@ -1,3 +1,3 @@
-import { cli } from './interfaces/cli';
+import { run } from './interfaces/cli/cli';
 
-cli.parse(process.argv);
+run(process.argv);

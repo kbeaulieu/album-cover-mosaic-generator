@@ -1,0 +1,8 @@
+listId = 495139
+width = 1000
+height =  1000
+backgroundColor = '#444'
+overlay = '#4074b8'
+blend = 'overlay'
+gradient = true
+padding = 10
